@@ -1,2 +1,2 @@
-# mtm_portfolio
-🌈 My public profile
+# 🌈 mtm_portfolio
+My public profile
