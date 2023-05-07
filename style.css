@@ -459,16 +459,22 @@ main {
         font-size: 14px;
         letter-spacing: 0px;
         text-align: center;
-        width: 300px;
+        width: 450px;
     }
+
 
 }
 
 @media only screen and (max-width: 400px) {
+    #aboutme {
+        padding: 50px 10px;
+    }
+
     #aboutme p {
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 0px;
-        text-align:center;
+        text-align: center;
+        width: 270px;
     }
     #aboutme h3 {
         font-size: 15px;
@@ -583,7 +589,7 @@ main {
     transition: 0.2s;
 }
 
-/* color: var(--pink) */
+
 
 #technologies .tech-group .tech-row .tech-item:hover .tech-info{
     visibility:visible;
@@ -595,25 +601,26 @@ main {
 
 @media only screen and (max-width: 830px) {
     #technologies .tech-group .tech-row{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap:5px;
-        margin-top:30px
-    }
-   
+        margin-top:30px; */
+        flex-wrap: wrap;
+}}
 
-}
+    
 
 @media only screen and (max-width: 400px) {
     #technologies .tech-group .tech-row{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:50px;
-        margin-top:15px
+        /* gap:50px;
+        margin-top:15px */
+        flex-wrap: wrap;
     }
    
 }
@@ -955,7 +962,7 @@ main {
 @media only screen and (max-width: 830px) {
     .footer_main{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     
@@ -966,6 +973,10 @@ main {
     .footer_main img {
         width: 190px;
         transition: 0.4s
+    }
+
+    .divider{
+        height: 300px;
     }
    
 
