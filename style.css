@@ -132,7 +132,7 @@ header img {
 
 /* mobile nav Tab */
 
-#menuBtn {
+/* #menuBtn {
     position: fixed;
     top: 25px;
     right: 25px;
@@ -147,9 +147,9 @@ header img {
     box-shadow: 0 0 20px var(--headerBackground);
     z-index: 999;
     display: none;
-}
+} */
 
-/* mobile view */
+/* mobile view
 @media only screen and (max-width:1050px) {
     header {
         left: -400px;
@@ -164,12 +164,25 @@ header img {
     }
 
     /* Header toggle */
-    .mobile-nav-active header {
+    /* .mobile-nav-active header {
         left: 0;
     }
 
     .mobile-nav-active .footer {
         left: 0;
+    }
+
+
+} */
+
+/* mobile view */
+@media only screen and (max-width:1050px) {
+    header {
+        display:none;
+    }
+
+    header .footer {
+        display:none;
     }
 
 
@@ -261,11 +274,13 @@ main {
 
 /* ------------------------ HOME Mobile view ------------------------*/
 
-/* @media only screen and (max-width: 670px) {
+@media only screen and (max-width: 670px) {
     #home {
         padding: 70px;
     }
-
+    #home .miniDivider{
+        height: 10px;
+    }
     #home .home-row h1 {
         font-size: 37px;
         letter-spacing: 0;
@@ -284,7 +299,7 @@ main {
     /* #home .home-row{
         position:relative
     } */
-/* }  */
+} 
 
 
 
@@ -443,8 +458,8 @@ main {
     #aboutme p {
         font-size: 14px;
         letter-spacing: 0px;
-        text-align: justify;
-        width: 400px;
+        text-align: center;
+        width: 300px;
     }
 
 }
@@ -576,6 +591,33 @@ main {
     
 }
 
+/* Movile tech */
+
+@media only screen and (max-width: 830px) {
+    #technologies .tech-group .tech-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        margin-top:30px
+    }
+   
+
+}
+
+@media only screen and (max-width: 400px) {
+    #technologies .tech-group .tech-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+        margin-top:15px
+    }
+   
+}
+
 
 
 
@@ -614,7 +656,7 @@ main {
 #portfolio .port-row{
     margin-top: 50px;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap:35px;
 }
 
@@ -706,6 +748,31 @@ main {
     font-size: 14px;
     
 }
+
+/* Movile tech */
+
+/* @media only screen and (max-width: 830px) {
+    #portfolio .port-row{
+        margin-top: 50px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #portfolio .port-row{
+        margin-top: 50px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:5px;
+    }
+  
+   
+} */
+
 
 
 
@@ -820,7 +887,110 @@ main {
     font-weight: 600;
 }
 
+/* movile form */
+
+@media only screen and (max-width: 830px) {
+    #contact .contact-form{
+      width: 500px;
+    }
+
+    #contact .sub-para{
+        width: 400px;
+      }
+   
+
+}
+
+@media only screen and (max-width: 400px) {
+    #contact .contact-form{
+        width: 370px;
+      }
+
+      #contact .sub-para{
+        width: 290px;
+      }
+   
+}
+
+
 /* ======================= Contact End ================================================== */
 
+/* Footer for mobile version */
+
+.footer_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    gap: 20px;
+}
+
+.footer_main p {
+    color: var(--green);
+    font-size: x-small;
+}
+
+.social-icons_fm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons_fm i {
+    color: var(--white);
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+
+.footer_main img {
+    width: 230px;
+    transition: 0.4s
+}
+
+@media only screen and (max-width: 830px) {
+    .footer_main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        gap: 20px;
+    }
+
+    .footer_main img {
+        width: 190px;
+        transition: 0.4s
+    }
+   
+
+}
+
+@media only screen and (max-width: 400px) {
+    .footer_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 20px;
+    }
+
+    .footer_main img {
+        width: 190px;
+        transition: 0.4s
+    }
+   
+}
+
+
 /* ======================= MAIN END ===================================================== */
+
+
+
 /* ======================= ALL BODY CONTENT END ========================================= */ 
